@@ -10,6 +10,8 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <!-- se agrega link -->
 </head>
 
 <body>
@@ -31,6 +33,9 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" id="nombreLogin">...</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" id="loginLink" href="login.html">Login</a>
           </li>
           <li class="nav-item">
@@ -40,10 +45,14 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
+    <div class="container" id="products-info">
+      <!-- <div class="alert alert-danger text-center" role="alert">
         <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      </div> -->
+    </div>
+    <div class="alert alert-dismissible fade" id="notification" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <span id="notification-message"></span>
     </div>
   </main>
   <footer class="text-muted">
